@@ -1,1 +1,0 @@
-# migirda.github.io
