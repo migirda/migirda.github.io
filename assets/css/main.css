@@ -1,6 +1,6 @@
-
-@import url(fontawesome-all.min.css);
-@import url("https://fonts.googleapis.com/css2?family=Nova+Square&display=swap");
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+</style>
 
 /*
     Dimension by HTML5 UP
@@ -14,9 +14,15 @@ iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
 code, del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var, b,
-u {
-    font-family: "Nova Square", serif; /* Nova Square fontlarÄ± burada ayarlandÄ± */
-}
+u 
+
+    .nova-square-regular {
+		font-family: "Nova Square", serif;
+		font-weight: 400;
+		font-style: normal;
+	  }
+	  
+
 
 /* Mevcut CSS iÃ§eriÄŸiyle devam etme */
 
