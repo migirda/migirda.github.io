@@ -1,21 +1,34 @@
 <!DOCTYPE HTML>  
 <!--  
-	Dimension by HTML5 UP  
-	html5up.net | @ajlkn  
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)  
+    Dimension by HTML5 UP  
+    html5up.net | @ajlkn  
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)  
 -->  
 <html>  
 <head>  
 <title>Un Kurdu</title>  
 <meta charset="utf-8" />  
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />  
+
+<!-- Google Fonts bağlantısı eklendi -->  
+<link rel="preconnect" href="https://fonts.googleapis.com">  
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  
+<link href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap" rel="stylesheet">  
+
 <link rel="stylesheet" href="assets/css/main.css" />  
 <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>  
 <style>  
 .logo img {  
-width: 50px; /* Resmin genişliğini ayarlar */  
-height: auto; /* Yüksekliği otomatik olarak ayarlar */  
-vertical-align: middle; /* Dikey hizalamayı ayarlar */  
+    width: 50px; /* Resmin genişliğini ayarlar */  
+    height: auto; /* Yüksekliği otomatik olarak ayarlar */  
+    vertical-align: middle; /* Dikey hizalamayı ayarlar */  
+}  
+
+/* Font'un CSS sınıfı eklendi */  
+.nova-square-regular {  
+    font-family: "Nova Square", serif;  
+    font-weight: 400;  
+    font-style: normal;  
 }  
 </style>  
 </head>  
@@ -27,12 +40,12 @@ vertical-align: middle; /* Dikey hizalamayı ayarlar */
 <!-- Header -->  
 <header id="header">  
 <div class="logo">  
-							<img src="images/worm_1.png" alt="Un kurdu logosu" />  
-							<img src="images/worm_1_w.png" alt="Un kurdu logosu" />  
+    <img src="images/worm_1.png" alt="Un kurdu logosu" />  
+    <img src="images/worm_1_w.png" alt="Un kurdu logosu" />  
 </div>  
 <div class="content">  
 <div class="inner">  
-<h1>Un Kurdu</h1>  
+<h1 class="nova-square-regular">Un Kurdu</h1>  <!-- Font sınıfı uygulandı -->  
 <p>Hayvanlarınız için iyi canlı yem seçeneği.</p>  
 </div>  
 </div>  
@@ -54,7 +67,7 @@ vertical-align: middle; /* Dikey hizalamayı ayarlar */
 <article id="intro">  
 <h2 class="major">Faydaları</h2>  
 <span class="image main"><img src="images/pic01.jpg" alt="Un kurdunun faydaları" /></span>  
-<p>Un kurtları, hayvanlarınız için mükemmel bir protein kaynağıdır. Kolayca sindirilebilirler ve çeşitli hayvanların beslenmesinde kullanılabilirler. </p>  
+<p>Un kurtları, hayvanlarınız için mükemmel bir protein kaynağıdır. Kolayca sindirilebilirler ve çeşitli hayvanların beslenmesinde kullanılabilirler.</p>  
 <p>Yüksek protein içeriği sayesinde hayvanlarınızın sağlıklı büyümesine ve gelişmesine yardımcı olurlar. Ayrıca, doğal bir yem oldukları için hayvanlarınızın bağışıklık sistemini güçlendirebilirler.</p>  
 </article>  
 
@@ -343,7 +356,6 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 </ul>  
 </form>  
 </section>  
-
 </article>  
 
 </div>  
@@ -366,3 +378,4 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 <script src="assets/js/main.js"></script>  
 
 </body>  
+</html>
