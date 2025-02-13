@@ -13,31 +13,17 @@
 <link rel="stylesheet" href="assets/css/main.css" />  
 <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>  
 <style>  
-.logo {  
-    cursor: pointer; /* Logoya tıklandığında pointer hâline gelir */  
+.logo img {  
+width: 50px; /* Resmin genişliğini ayarlar */  
+height: auto; /* Yüksekliği otomatik olarak ayarlar */  
+vertical-align: middle; /* Dikey hizalamayı ayarlar */  
 }  
 
 /* Tüm site için font ayarı eklendi */  
 body {  
-    font-family: "Nova Square", serif;  
-    font-weight: 400;  
-    font-style: normal;  
-}  
-
-.custom-turkish-font {  
-    font-family: Arial, sans-serif;  
-}  
-
-/* Özelleştirilmiş fare kursörü */
-.custom-cursor {
-    position: fixed; /* Sabit konumda */
-    width: 50px; /* PNG genişliği */
-    height: 50px; /* PNG yüksekliği */
-    background: url('images/worm_1_w.png') no-repeat center center; /* PNG görüntüsü */
-    background-size: contain; /* İçeriği boyuta göre ayarla */
-    pointer-events: none; /* Fare kursör ile etkileşimi engelle */
-    z-index: 1000; /* Diğer içeriklerin üzerinde görünmesi için */
-    display: none; /* Başlangıçta görüntülenmesin */
+font-family: "Nova Square", serif; /* Tüm site için genel font ayarı */  
+font-weight: 400; /* Normal kalınlık */  
+font-style: normal; /* Normal stil */  
 }  
 </style>  
 </head>  
@@ -48,12 +34,13 @@ body {
 
 <!-- Header -->  
 <header id="header">  
-<div class="logo" id="logo">  
-    <img src="images/worm_1_w.png" alt="Un kurdu logosu" />  
+<div class="logo">  
+    <img src="images/worm_1.png" alt="Un kurdu logosu" />  
+<img src="images/worm_1_w.png" alt="Un kurdu logosu" />  
 </div>  
 <div class="content">  
 <div class="inner">  
-<h1>Un Kurdu<span class="custom-turkish-font">İ</span>çin</h1>  
+<h1>Un Kurdu</h1>  
 <p>Hayvanlarınız için iyi canlı yem seçeneği.</p>  
 </div>  
 </div>  
@@ -62,7 +49,7 @@ body {
 <li><a href="#intro">Faydaları</a></li>  
 <li><a href="#work">Etki</a></li>  
 <li><a href="#about">Hakkımızda</a></li>  
-<li><a href="#contact"><span class="custom-turkish-font">İ</span>letişim</a></li>  
+<li><a href="#contact">İletişim</a></li>  
 </ul>  
 </nav>  
 </header>  
@@ -95,7 +82,7 @@ body {
 
 <!-- Contact -->  
 <article id="contact">  
-<h2 class="major"><span class="custom-turkish-font">İ</span>letişim</h2>  
+<h2 class="major">İletişim</h2>  
 <form method="post" action="#">  
 <div class="fields">  
 <div class="field half">  
@@ -331,9 +318,9 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 <select name="demo-category" id="demo-category">  
 <option value="">-</option>  
 <option value="1">Manufacturing</option>  
-<option value="2">Shipping</option>  
-<option value="3">Administration</option>  
-<option value="4">Human Resources</option>  
+<option value="1">Shipping</option>  
+<option value="1">Administration</option>  
+<option value="1">Human Resources</option>  
 </select>  
 </div>  
 <div class="field half">  
@@ -377,36 +364,6 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 <!-- BG -->  
 <div id="bg"></div>  
 
-<!-- Custom Cursor Script -->  
-<script>  
-// Sabit değişkenler
-const logo = document.getElementById('logo');  
-const customCursor = document.createElement('div');  
-customCursor.className = 'custom-cursor';  
-document.body.appendChild(customCursor);  
-
-// Logoya tıklama olayını dinleyin
-logo.addEventListener('click', function() {  
-    customCursor.style.display = 'block'; // Özel imleci göster  
-    // Fare hareketlerinde özel imlecin konumunu güncelleyin
-    document.addEventListener('mousemove', function(event) {  
-        customCursor.style.left = event.pageX + 'px';  
-        customCursor.style.top = event.pageY + 'px';  
-    });  
-    // İmleci gizle
-    document.body.style.cursor = 'none'; // Normal imleci gizle  
-});  
-
-// Tüm sayfanın tıklama olayını dinleyin
-document.addEventListener('click', function(event) {  
-    // Eğer tıklama logo dışında bir yere yapılmışsa
-    if (!logo.contains(event.target)) {  
-        customCursor.style.display = 'none'; // Özel imleci gizle  
-        document.body.style.cursor = 'default'; // Normal imleci geri getir  
-    }  
-});  
-</script>  
-
 <!-- Scripts -->  
 <script src="assets/js/jquery.min.js"></script>  
 <script src="assets/js/browser.min.js"></script>  
@@ -415,4 +372,3 @@ document.addEventListener('click', function(event) {
 <script src="assets/js/main.js"></script>  
 
 </body>  
-</html>
