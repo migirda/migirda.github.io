@@ -17,7 +17,25 @@ u {
     font-family: "Nova Square", serif; /* Nova Square fontu buraya eklendi */
 }
 
-/* Mevcut CSS kurallarÄ± buraya gelecek... */
+@import url(fontawesome-all.min.css);
+@import url("https://fonts.googleapis.com/css2?family=Nova+Square&display=swap");
+
+/*
+    Dimension by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+*/
+
+html, body, div, span, applet, object,
+iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+pre, a, abbr, acronym, address, big, cite,
+code, del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b,
+u {
+    font-family: "Nova Square", serif; /* Nova Square fontu buraya eklendi */
+}
+
+/* Mevcut CSS kurallarÃ„Â± buraya gelecek... */
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600");
 
