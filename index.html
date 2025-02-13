@@ -13,11 +13,8 @@
 <link rel="stylesheet" href="assets/css/main.css" />  
 <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>  
 <style>  
-.logo img {  
-    width: 50px;  
-    height: auto;  
-    vertical-align: middle;  
-    cursor: pointer; /* İşaretçi tıklandığında pointer hâline gelir */  
+.logo {  
+    cursor: pointer; /* Logoya tıklandığında pointer hâline gelir */  
 }  
 
 /* Tüm site için font ayarı eklendi */  
@@ -32,7 +29,7 @@ body {
 }  
 
 /* Özelleştirilmiş fare kursörü */
-.cursor {
+.custom-cursor {
     position: fixed; /* Sabit konumda */
     width: 50px; /* PNG genişliği */
     height: 50px; /* PNG yüksekliği */
@@ -334,9 +331,9 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 <select name="demo-category" id="demo-category">  
 <option value="">-</option>  
 <option value="1">Manufacturing</option>  
-<option value="1">Shipping</option>  
-<option value="1">Administration</option>  
-<option value="1">Human Resources</option>  
+<option value="2">Shipping</option>  
+<option value="3">Administration</option>  
+<option value="4">Human Resources</option>  
 </select>  
 </div>  
 <div class="field half">  
@@ -382,28 +379,30 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 <!-- Custom Cursor Script -->  
 <script>  
+// Sabit değişkenler
 const logo = document.getElementById('logo');  
 const customCursor = document.createElement('div');  
-customCursor.className = 'cursor';  
-
+customCursor.className = 'custom-cursor';  
 document.body.appendChild(customCursor);  
 
+// Logoya tıklama olayını dinleyin
 logo.addEventListener('click', function() {  
-    let isCursorVisible = false;  
-    customCursor.style.display = 'block';  
-    isCursorVisible = true;  
-
-    // Fare hareket ettiğinde pozisyonu güncelle  
+    customCursor.style.display = 'block'; // Özel imleci göster  
+    // Fare hareketlerinde özel imlecin konumunu güncelleyin
     document.addEventListener('mousemove', function(event) {  
         customCursor.style.left = event.pageX + 'px';  
         customCursor.style.top = event.pageY + 'px';  
     });  
+    // İmleci gizle
+    document.body.style.cursor = 'none'; // Normal imleci gizle  
 });  
 
-// Fareyi logoya tıkladıktan sonra normal dönüştür, custom cursor'u gizle  
+// Tüm sayfanın tıklama olayını dinleyin
 document.addEventListener('click', function(event) {  
+    // Eğer tıklama logo dışında bir yere yapılmışsa
     if (!logo.contains(event.target)) {  
-        customCursor.style.display = 'none';  
+        customCursor.style.display = 'none'; // Özel imleci gizle  
+        document.body.style.cursor = 'default'; // Normal imleci geri getir  
     }  
 });  
 </script>  
