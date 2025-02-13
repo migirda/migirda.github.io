@@ -26,7 +26,7 @@ u
 
 /* Mevcut CSS iÃ§eriÄŸiyle devam etme */
 
-@import url(fontawesome-all.min.css);
+
 @import url("https://fonts.googleapis.com/css2?family=Nova+Square&display=swap");
 
 /*
@@ -44,7 +44,7 @@ u {
     font-family: "Nova Square", serif; /* Nova Square fontu buraya eklendi */
 }
 
-@import url(fontawesome-all.min.css);
+
 @import url("https://fonts.googleapis.com/css2?family=Nova+Square&display=swap");
 
 /*
@@ -63,7 +63,7 @@ u {
 }
 
 /* Mevcut CSS kurallarÃƒâ€Ã‚Â± buraya gelecek... */
-@import url(fontawesome-all.min.css);
+
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600");
 
 /*
