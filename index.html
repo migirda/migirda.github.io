@@ -24,6 +24,33 @@
             height: 100%; /* Tam yüksekliği doldurur */  
             object-fit: cover; /* Görselin oranını koruyarak doldurur */  
         }  
+
+        .product-wrapper {  
+            display: flex;  
+            justify-content: space-around; /* Ürünleri yan yana yerleştirmek için */  
+            margin: 20px 0; /* Üst ve alt boşluk */  
+        }  
+
+        .product {  
+            border: 1px solid #ddd; /* Ürün kutusunun çerçevesi */  
+            border-radius: 8px; /* Yuvarlak köşe */  
+            padding: 20px; /* İç boşluk */  
+            width: 45%; /* Her ürünü %45 genişlikte yapar */  
+            text-align: center; /* Metni ortalamak için */  
+        }  
+
+        .image-container {  
+            width: 100%; /* Görselin tam genişlikte olmasını sağlar */  
+            height: 200px; /* Sabit bir yükseklik ayarı */  
+            overflow: hidden; /* Taşan görseli gizler */  
+            border-radius: 8px; /* Köşeleri yuvarlak yapar */  
+        }  
+
+        .image-container img {  
+            width: 100%; /* Görsel tam genişlikle doldurur */  
+            height: 100%; /* Görsel tam yükseklikle doldurur */  
+            object-fit: cover; /* Görselin oranını koruyarak doldurur */  
+        }  
     </style>  
 </head>  
 <body class="is-preload">  
@@ -69,6 +96,27 @@
     <span class="image main"><img src="images/pic02.jpg" alt="Un kurdunun hayvanlar üzerindeki etkisi" /></span>  
     <p>Un kurtları, özellikle kuşlar, sürüngenler ve balıklar için ideal bir yemdir. Evcil hayvanlarınızın yanı sıra, çiftlik hayvanlarınızın da beslenmesinde kullanılabilirler.</p>  
     <p>Düzenli olarak un kurdu ile beslenen hayvanlarda daha canlı renkler, daha sağlıklı tüyler ve daha yüksek enerji seviyeleri gözlemlenir.</p>  
+</article>  
+
+<!-- Products -->  
+<article id="products">  
+    <h2 class="major">Ürünlerimiz</h2>  
+    <div class="product-wrapper flex">  
+        <div class="product">  
+            <div class="image-container">  
+                <img src="images/canlı_un_kurdu.jpg" alt="Canlı Un Kurdu" />  
+            </div>  
+            <h3>Canlı Un Kurdu</h3>  
+            <p>Canlı un kurtları, hayvanlarınız için taze ve besleyici bir seçenek sunar. Yüksek protein içeriği ile sağlıklı büyümelerine katkıda bulunur.</p>  
+        </div>  
+        <div class="product">  
+            <div class="image-container">  
+                <img src="images/kurutulmuş_un_kurdu.jpg" alt="Kurutulmuş Un Kurdu" />  
+            </div>  
+            <h3>Kurutulmuş Un Kurdu</h3>  
+            <p>Kurutulmuş un kurtları, uzun süre saklama avantajıyla gelirken, hayvanlarınıza sağlıklı bir besin kaynağı sunar.</p>  
+        </div>  
+    </div>  
 </article>  
 
 <!-- About -->  
