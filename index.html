@@ -5,17 +5,13 @@
     <meta charset="utf-8" />  
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />  
 
-    <!-- Google Fonts bağlantısı eklendi -->  
-    <link rel="preconnect" href="https://fonts.googleapis.com">  
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  
-    <link href="https://fonts.googleapis.com/css2?family=Nova+Flat&display=swap" rel="stylesheet">  
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />  
     <link rel="stylesheet" href="assets/css/main.css" />  
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>  
     <style>  
         .logo {  
-            width: 50px;  
-            height: 50px;  
+            width: 100px; /* yuvarlak görselin boyutu */  
+            height: 100px;  
             border-radius: 50%; /* Tam yuvarlak yapar */  
             overflow: hidden; /* Taşan görseli gizler */  
             display: flex; /* Flexbox ile içeriği ortalar */  
@@ -25,21 +21,8 @@
 
         .logo img {  
             width: 100%; /* Tam genişlikte doldurur */  
-            height: auto; /* Oryantasyonunu korur */  
+            height: 100%; /* Tam yüksekliği doldurur */  
             object-fit: cover; /* Görselin oranını koruyarak doldurur */  
-        }  
-
-        /* Tüm site için font ayarı eklendi */  
-        body {  
-            font-family: "Nova Flat", serif; /* Tüm site için genel font ayarı */  
-            font-weight: 400; /* Normal kalınlık */  
-            font-style: normal; /* Normal stil */  
-        }  
-
-        .nova-flat-regular {  
-            font-family: "Nova Flat", serif;  
-            font-weight: 400;  
-            font-style: normal;  
         }  
     </style>  
 </head>  
@@ -382,7 +365,8 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 <!-- Scripts -->  
 <script src="assets/js/jquery.min.js"></script>  
 <script src="assets/js/browser.min.js"></script>  
-<script src="assets/js/breakpoints.min"></script>
+<script src="assets/js/breakpoints.min.js"></script>  
+<script src="assets/js/util.js"></script>  
 <script src="assets/js/main.js"></script>  
 
 </body>  
