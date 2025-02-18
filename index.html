@@ -12,8 +12,8 @@
     <style>  
         /* Anasayfa logosu için stil */  
         header .logo {  
-            width: 200px; /* Logonun çerçeve boyutu */  
-            height: 200px;  
+            width: 120px; /* Logonun çerçeve boyutu */  
+            height: 120px;  
             border-radius: 50%; /* Tam yuvarlak yapar */  
             overflow: hidden; /* Taşan görseli gizler */  
             display: flex; /* Flexbox ile içeriği ortalar */  
@@ -30,20 +30,23 @@
     
         /* Hakkımızda logosu için stil */  
         .about .logo {  
-            width: 150px; /* Logonun boyutu */  
-            height: 150px;  
+            width: 200px; /* Logonun boyutu */  
+            height: 200px;  
             border-radius: 50%; /* Tam yuvarlak yapar */  
             overflow: hidden; /* Taşan görseli gizler */  
             display: flex; /* Flexbox ile içeriği ortalar */  
             justify-content: center;  
             align-items: center;  
             margin-bottom: 20px; /* Metin ile arasında boşluk oluşturur */  
+            border: 2px solid #ccc; /* Çerçeve rengi ve kalınlığı */  
+            background-color: white; /* Çerçevenin arka plan rengi */  
         }  
     
         .about .logo img {  
             width: 100%; /* Tam genişlikte doldurur */  
             height: 100%; /* Tam yüksekliği doldurur */  
             object-fit: cover; /* Görselin oranını koruyarak doldurur */  
+            border-radius: 50%; /* İçteki görüntü için yuvarlak köşe */  
         }  
     
         .product img {  
@@ -134,7 +137,20 @@
         </div>  
     </div>  
     
-    <p>Biz, hayvanlarınız için en kaliteli un kurtlarını üretmek için yola çıkmış bir ekibiz. Doğal ve sürdürülebilir yöntemlerle üretim yaparak, hayvanlarınızın sağlığını ön planda tutuyoruz.</p>  
+    <p class="mb-4">  
+        Merhaba, ben Onur Can Mığırdağı. Yeditepe Üniversitesi Uluslararası Ticaret ve İşletmecilik bölümünde eğitimime devam etmekteyim.   
+        2016 yılından bu yana hobi olarak un kurdu yetiştiriciliğiyle ilgileniyorum. Bu hobi, beni sürdürülebilir bir sosyal girişimcilik projesi geliştirmeye yönlendirdi.  
+    </p>  
+    <p class="mb-4">  
+        Projemizi desteklemek amacıyla, tavuklara ve balıklara büyüme ve erginlik dönemlerinde un kurdu diyeti uygulayarak çeşitli deneyler gerçekleştirdik.   
+        "Hayal Edin, Gerçekleştirelim" yarışmasında jüri özel ödülüne layık görüldük. Ayrıca, Çinli ve Hint öğrencilerin de yer aldığı bir ekip ile   
+        İngiltere'nin Reading Üniversitesi'nden profesörlere projemizi sunduk ve aldığımız geri bildirimleri titizlikle değerlendirdik.  
+    </p>  
+    <p class="mb-4">  
+        Güncel araştırmaları sürekli takip ederek işimizi geliştirmeye devam etmekteyiz. Önümüzdeki altı ay içinde, aylık 20 milyon un kurdu   
+        yetiştirebilecek kapasiteye ulaşmayı hedefliyoruz. Bu hedefe ulaşarak, ülkemizde büyük bir öneme sahip olan hayvan yetiştiriciliği sektörüne,   
+        sağlıklı ve verimliliği artıracak yemlerimizle katkıda bulunmayı amaçlıyoruz.
+    </p>  
 </article>  
 
 <!-- Contact -->  
