@@ -1,0 +1,239 @@
+<!DOCTYPE HTML>  
+<html lang="zh">  
+<head>  
+    <title>面粉虫</title>  
+    <meta charset="utf-8" />  
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />  
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />  
+    <link rel="stylesheet" href="assets/css/main.css" />  
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>  
+    <style>  
+        /* 通用Logo样式 */  
+        .logo {  
+            width: 200px; /* 默认Logo大小 */  
+            height: 200px;  
+            border-radius: 50%;  
+            overflow: hidden;  
+            display: flex;  
+            justify-content: center;  
+            align-items: center;  
+        }  
+
+        .logo img {  
+            width: 100%;  
+            height: 100%;  
+            object-fit: cover;  
+            border-radius: 50%; /* 内部图像的圆角 */  
+        }  
+
+        /* 首页Logo专用样式 */  
+        header .logo {  
+            width: 120px;  
+            height: 120px;  
+            margin-bottom: 0;  
+        }  
+
+        /* 关于我们Logo专用样式 */  
+        .about .logo {  
+            margin-bottom: 20px;  
+            border: 2px solid #ccc;  
+            background-color: white;  
+        }  
+        .about .logo img {  
+            border-radius: 50%; /* 内部图像的圆角 */  
+        }  
+
+        /* 产品图像样式 */  
+        .product img {  
+            width: 200px;  
+            height: 200px;  
+            object-fit: cover;  
+            border: 2px solid #ccc;  
+            border-radius: 10px;  
+            margin-bottom: 10px;  
+        }  
+
+        .product {  
+            text-align: center;  
+        }  
+
+        /* 关于我们部分的Flex使用 */  
+        .about .flex {  
+            display: flex;  
+            justify-content: center;  
+            align-items: center;  
+        }  
+
+        /* 页脚中的国旗样式 */  
+        footer .flag-link {  
+            display: inline-block;  
+            text-decoration: none !important; /* 去掉下划线 */  
+            margin: 0 5px;  
+        }  
+
+        footer .flag-link:hover {  
+            text-decoration: none; /* 悬停时也去掉下划线 */  
+        }  
+
+        footer .flag-link img {  
+            border: none;  
+            width: 30px;  
+            height: 20px;  
+            border-radius: 4px;  
+            transition: transform 0.2s;  
+        }  
+
+        footer .flag-link img:hover {  
+            transform: scale(1.1);  
+        }  
+        
+    </style>  
+</head>  
+<body class="is-preload">  
+
+<!-- Wrapper -->  
+<div id="wrapper">  
+
+<!-- Header -->  
+<header id="header">  
+    <div class="logo">  
+        <img src="images/mealworm.png" alt="面粉虫Logo" />  
+    </div>  
+    <div class="content">  
+        <div class="inner">  
+            <h1>面粉虫</h1>  
+            <p>为您的动物提供优质活饲料选择</p>  
+        </div>  
+    </div>  
+    <nav>  
+        <ul>  
+            <li><a href="#intro">好处</a></li>  
+            <li><a href="#work">产品</a></li>  
+            <li><a href="#about">关于我们</a></li>  
+            <li><a href="#contact">联系</a></li>  
+        </ul>  
+    </nav>  
+</header>  
+
+<!-- Main -->  
+<div id="main">  
+
+<!-- Intro -->  
+<article id="intro">  
+    <h2 class="major">好处</h2>  
+    <span class="image main"><img src="images/chicken.png" alt="面粉虫的好处" /></span>  
+    <p>面粉虫是您的动物的优质蛋白质来源。</p>  
+    <p>由于我们高蛋白含量和健康饮食方案，它们可以有效促进动物健康生长和发育。</p>  
+    <p>此外，面粉虫具有易于消化的特性，丰富的营养成分提供大量维生素和矿物质。这些营养成分增强动物的整体健康状况，帮助满足最佳营养需求。</p>  
+</article>  
+
+<!-- Work -->  
+<article id="work">  
+    <h2 class="major">产品</h2>  
+    <div class="product-wrapper flex">  
+        <div class="product">  
+            <div class="image-container">  
+                <img src="images/product_1.jpg" alt="活面粉虫" />  
+            </div>  
+            <h3>活面粉虫</h3>  
+            <p>活面粉虫为您的动物提供新鲜和营养丰富的选择。高蛋白含量帮助它们健康生长。</p>  
+        </div>  
+        <div class="product">  
+            <div class="image-container">  
+                <img src="images/freezed.jpg" alt="干面粉虫" />  
+            </div>  
+            <h3>干面粉虫</h3>  
+            <p>干面粉虫具有长期保存的优势，为动物提供健康的饲料来源。</p>  
+        </div>  
+    </div>  
+</article>  
+
+<!-- About -->  
+<article id="about" class="about">  
+    <h2 class="major">关于我们</h2>  
+    <div class="flex">  
+        <div class="logo">  
+            <img src="images/profile.jpeg" alt="关于面粉虫生产者" />  
+        </div>  
+    </div>  
+
+    <p class="mb-4">  
+        你好，我是 Onur Can Mığırdağı。我在耶迪特佩大学国际贸易与经营管理专业继续我的学习。  
+        自2016年以来，我一直在作为爱好养殖面粉虫。这个爱好让我朝着开发可持续社会企业项目的方向前进。  
+    </p>  
+    <p class="mb-4">  
+        为了支持我们的项目，我们进行了各种实验，为鸡和鱼在生长和发育阶段实施面粉虫饮食。  
+        我们在“梦想，实现”比赛中获得了评委特别奖。此外，我与包括中国和印度学生在内的一个团队，在  
+        英国雷丁大学的教授面前展示了我们的项目，并认真评估了反馈。  
+    </p>  
+    <p class="mb-4">  
+        我们在不断关注最新研究的同时，继续提升我们的工作。未来六个月内，我们计划达到每月  
+        养殖2000万只面粉虫的能力。通过实现这个目标，我们希望为在我们国家具有重要意义的家畜养殖  
+        领域贡献我们健康的、提高生产效率的饲料。  
+    </p>  
+</article>  
+
+<!-- Contact -->  
+<article id="contact">  
+    <h2 class="major">联系</h2>  
+    <form method="post" action="#">  
+        <div class="fields">  
+            <div class="field half">  
+                <label for="name">您的名字</label>  
+                <input type="text" name="name" id="name" />  
+            </div>  
+            <div class="field half">  
+                <label for="email">电子邮件</label>  
+                <input type="text" name="email" id="email" />  
+            </div>  
+            <div class="field">  
+                <label for="message">您的信息</label>  
+                <textarea name="message" id="message" rows="4"></textarea>  
+            </div>  
+        </div>  
+        <ul class="actions">  
+            <li><input type="submit" value="发送信息" class="primary" /></li>  
+            <li><input type="reset" value="重置" /></li>  
+        </ul>  
+    </form>  
+    <ul class="icons">  
+        <li><a href="#" class="icon brands fa-twitter"><span class="label">推特</span></a></li>  
+        <li><a href="#" class="icon brands fa-facebook-f"><span class="label">脸书</span></a></li>  
+        <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>  
+        <li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>  
+    </ul>  
+</article>  
+
+</div>  
+
+<!-- Footer -->  
+<footer id="footer">  
+    <p class="copyright">&copy; 面粉饲料公司</p>  
+    <div>  
+        <a href="index.html" class="flag-link">  
+            <img src="https://flagcdn.com/tr.svg" alt="土耳其国旗" width="30" height="20">  
+        </a>  
+        <a href="index-en.html" class="flag-link">  
+            <img src="https://flagcdn.com/gb.svg" alt="英国国旗" width="30" height="20">  
+        </a>  
+        <a href="index-cn.html" class="flag-link">  
+            <img src="https://flagcdn.com/cn.svg" alt="中国国旗" width="30" height="20">  
+        </a>  
+    </div>  
+</footer>  
+
+</div>  
+
+<!-- BG -->  
+<div id="bg"></div>  
+
+<!-- Scripts -->  
+<script src="assets/js/jquery.min.js"></script>  
+<script src="assets/js/browser.min.js"></script>  
+<script src="assets/js/breakpoints.min.js"></script>  
+<script src="assets/js/util.js"></script>  
+<script src="assets/js/main.js"></script>  
+
+</body>  
+</html>
