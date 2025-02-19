@@ -9,63 +9,60 @@
     <link rel="stylesheet" href="assets/css/main.css" />  
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>  
     <style>  
-        /* Anasayfa logosu için stil */  
-        header .logo {  
-            width: 120px; /* Logonun çerçeve boyutu */  
-            height: 120px;  
-            border-radius: 50%; /* Tam yuvarlak yapar */  
-            overflow: hidden; /* Taşan görseli gizler */  
-            display: flex; /* Flexbox ile içeriği ortalar */  
-            justify-content: center;  
-            align-items: center;  
-            margin-bottom: 0; /* Metin ile arasında boşluk yok */  
-        }  
-
-        header .logo img {  
-            width: 100%; /* Tam genişlikte doldurur */  
-            height: 100%; /* Tam yüksekliği doldurur */  
-            object-fit: cover; /* Görselin oranını koruyarak doldurur */  
-        }  
-
-        /* Hakkımızda logosu için stil */  
-        .about .logo {  
-            width: 200px; /* Logonun boyutu */  
+        /* Ortak logo stilleri */  
+        .logo {  
+            width: 200px; /* Varsayılan logo boyutu */  
             height: 200px;  
-            border-radius: 50%; /* Tam yuvarlak yapar */  
-            overflow: hidden; /* Taşan görseli gizler */  
-            display: flex; /* Flexbox ile içeriği ortalar */  
+            border-radius: 50%;  
+            overflow: hidden;  
+            display: flex;  
             justify-content: center;  
             align-items: center;  
-            margin-bottom: 20px; /* Metin ile arasında boşluk oluşturur */  
-            border: 2px solid #ccc; /* Çerçeve rengi ve kalınlığı */  
-            background-color: white; /* Çerçevenin arka plan rengi */  
         }  
 
-        .about .logo img {  
-            width: 100%; /* Tam genişlikte doldurur */  
-            height: 100%; /* Tam yüksekliği doldurur */  
-            object-fit: cover; /* Görselin oranını koruyarak doldurur */  
+        .logo img {  
+            width: 100%;  
+            height: 100%;  
+            object-fit: cover;  
             border-radius: 50%; /* İçteki görüntü için yuvarlak köşe */  
         }  
 
+        /* Anasayfa logosu için özel stil */  
+        header .logo {  
+            width: 120px;  
+            height: 120px;  
+            margin-bottom: 0;  
+        }  
+
+        /* Hakkımızda logosu için özel stil */  
+        .about .logo {  
+            margin-bottom: 20px;  
+            border: 2px solid #ccc;  
+            background-color: white;  
+        }  
+        .about .logo img {  
+            border-radius: 50%; /* İçteki görüntü için yuvarlak köşe */  
+        }  
+
+        /* Ürün görseli stilleri */  
         .product img {  
-            width: 200px; /* Görselin genişliği */  
-            height: 200px; /* Görselin yüksekliği */  
-            object-fit: cover; /* Görselin oranını koruyarak doldurur */  
-            border: 2px solid #ccc; /* Çerçeve rengi ve kalınlığı */  
-            border-radius: 10px; /* Çerçevenin köşelerini yuvarlar */  
-            margin-bottom: 10px; /* Görsel ile metin arasındaki boşluk */  
+            width: 200px;  
+            height: 200px;  
+            object-fit: cover;  
+            border: 2px solid #ccc;  
+            border-radius: 10px;  
+            margin-bottom: 10px;  
         }  
 
         .product {  
-            text-align: center; /* Ürün içeriğini ortalar */  
+            text-align: center;  
         }  
 
         /* Hakkımızda bölümünde flex kullanımı */  
         .about .flex {  
             display: flex;  
-            justify-content: center; /* Yatayda ortalar */  
-            align-items: center; /* Dikeyde ortalar */  
+            justify-content: center;  
+            align-items: center;  
         }  
     </style>  
 </head>  
