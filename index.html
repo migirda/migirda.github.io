@@ -64,6 +64,31 @@
             justify-content: center;  
             align-items: center;  
         }  
+
+        /* Footer içindeki bayrağı stilize etme */  
+        footer .flag-link {  
+            display: inline-block;  
+            text-decoration: none !important; /* Noktalı çizgiyi kaldırır */  
+            margin: 0 5px;  
+        }  
+
+        footer .flag-link:hover {  
+            text-decoration: none; /* Hover durumunda da noktalı çizgiyi kaldırır */  
+        }  
+
+        footer .flag-link img {  
+            border: none;  
+            width: 30px;  
+            height: 20px;  
+            border-radius: 4px;  
+            transition: transform 0.2s;  
+        }  
+
+        footer .flag-link img:hover {  
+            transform: scale(1.1);  
+        }  
+        
+      
     </style>  
 </head>  
 <body class="is-preload">  
@@ -186,6 +211,17 @@
 <!-- Footer -->  
 <footer id="footer">  
     <p class="copyright">&copy; Meal Yemcilik</p>  
+    <div>  
+        <a href="index.html" class="flag-link">  
+            <img src="https://flagcdn.com/tr.svg" alt="Turkish Flag" width="30" height="20">  
+        </a>  
+        <a href="index-en.html" class="flag-link">  
+            <img src="https://flagcdn.com/gb.svg" alt="British Flag" width="30" height="20">  
+        </a>  
+        <a href="index-cn.html" class="flag-link">  
+            <img src="https://flagcdn.com/cn.svg" alt="Chinese Flag" width="30" height="20">  
+        </a>  
+    </div>  
 </footer>  
 
 </div>  
