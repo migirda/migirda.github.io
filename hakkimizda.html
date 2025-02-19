@@ -1,21 +1,118 @@
-<h2 class="major">Hakkımızda</h2>  
-<div class="flex">  
-    <div class="logo">  
-        <img src="images/profile.jpeg" alt="Un kurdu üreticisi hakkında" />  
-    </div>  
-</div>  
+<!DOCTYPE HTML>  
+<html lang="tr">  
+<head>  
+    <title>Hakkımızda - Un Kurdu</title>  
+    <meta charset="utf-8" />  
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />  
+    <link rel="stylesheet" href="assets/css/main.css" />  
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>  
+    <style>  
+        /* Ortak logo stilleri */  
+        .logo {  
+            width: 200px;  
+            height: 200px;  
+            border-radius: 50%;  
+            overflow: hidden;  
+            display: flex;  
+            justify-content: center;  
+            align-items: center;  
+        }  
+        .logo img {  
+            width: 100%;  
+            height: 100%;  
+            object-fit: cover;  
+            border-radius: 50%; /* İçteki görüntü için yuvarlak köşe */  
+        }  
+        /* Anasayfa logosu için özel stil */  
+        header .logo {  
+            width: 120px;  
+            height: 120px;  
+            margin-bottom: 0;  
+        }  
+        /* Hakkımızda logosu için özel stil */  
+        .about .logo {  
+            margin-bottom: 20px;  
+            border: 2px solid #ccc;  
+            background-color: white;  
+        }  
+        .about .logo img {  
+            border-radius: 50%; /* İçteki görüntü için yuvarlak köşe */  
+        }  
+        /* Ürün görseli stilleri */  
+        .product img {  
+            width: 200px;  
+            height: 200px;  
+            object-fit: cover;  
+            border: 2px solid #ccc;  
+            border-radius: 10px;  
+            margin-bottom: 10px;  
+        }  
+        .product {  
+            text-align: center;  
+        }  
+        /* Hakkımızda bölümünde flex kullanımı */  
+        .about .flex {  
+            display: flex;  
+            justify-content: center;  
+            align-items: center;  
+        }  
+    </style>  
+</head>  
+<body class="is-preload">  
+    <div id="wrapper">  
+        <header id="header">  
+            <div class="logo">  
+                <img src="images/mealworm.png" alt="Un kurdu logosu" />  
+            </div>  
+            <div class="content">  
+                <div class="inner">  
+                    <h1>Un Kurdu</h1>  
+                    <p>Hayvanlarınız için iyi canlı yem seçeneği</p>  
+                </div>  
+            </div>  
+            <nav>  
+                <ul>  
+                    <li><a href="faydalari.html">Faydaları</a></li>  
+                    <li><a href="urunler.html">Ürünler</a></li>  
+                    <li><a href="hakkimizda.html">Hakkımızda</a></li>  
+                    <li><a href="iletisim.html">İletişim</a></li>  
+                </ul>  
+            </nav>  
+        </header>  
+        <div id="main">  
+            <article class="about">  
+                <h2 class="major">Hakkımızda</h2>  
+                <div class="flex">  
+                    <div class="logo">  
+                        <img src="images/profile.jpeg" alt="Un kurdu üreticisi hakkında" />  
+                    </div>  
+                </div>  
 
-<p class="mb-4">  
-    Merhaba, ben Onur Can Mığırdağı. Yeditepe Üniversitesi Uluslararası Ticaret ve İşletmecilik bölümünde eğitimime devam etmekteyim.  
-    2016 yılından bu yana hobi olarak un kurdu yetiştiriciliğiyle ilgileniyorum. Bu hobi, beni sürdürülebilir bir sosyal girişimcilik projesi geliştirmeye yönlendirdi.  
-</p>  
-<p class="mb-4">  
-    Projemizi desteklemek amacıyla, tavuklara ve balıklara büyüme ve erginlik dönemlerinde un kurdu diyeti uygulayarak çeşitli deneyler gerçekleştirdik.  
-    "Hayal Edin, Gerçekleştirelim" yarışmasında jüri özel ödülüne layık görüldük. Ayrıca, Çinli ve Hint öğrencilerin de yer aldığı bir ekip ile  
-    İngiltere'nin Reading Üniversitesi'nden profesörlere projemizi sunduk ve aldığımız geri bildirimleri titizlikle değerlendirdik.  
-</p>  
-<p class="mb-4">  
-    Güncel araştırmaları sürekli takip ederek işimizi geliştirmeye devam etmekteyiz. Önümüzdeki altı ay içinde, aylık 20 milyon un kurdu  
-    yetiştirebilecek kapasiteye ulaşmayı hedefliyoruz. Bu hedefe ulaşarak, ülkemizde büyük bir öneme sahip olan hayvan yetiştiriciliği sektörüne,  
-    sağlıklı ve verimliliği artıracak yemlerimizle katkıda bulunmayı amaçlıyoruz.  
-</p>
+                <p class="mb-4">  
+                    Merhaba, ben Onur Can Mığırdağı. Yeditepe Üniversitesi Uluslararası Ticaret ve İşletmecilik bölümünde eğitimime devam etmekteyim.  
+                    2016 yılından bu yana hobi olarak un kurdu yetiştiriciliğiyle ilgileniyorum. Bu hobi, beni sürdürülebilir bir sosyal girişimcilik projesi geliştirmeye yönlendirdi.  
+                </p>  
+                <p class="mb-4">  
+                    Projemizi desteklemek amacıyla, tavuklara ve balıklara büyüme ve erginlik dönemlerinde un kurdu diyeti uygulayarak çeşitli deneyler gerçekleştirdik.  
+                    "Hayal Edin, Gerçekleştirelim" yarışmasında jüri özel ödülüne layık görüldük. Ayrıca, Çinli ve Hint öğrencilerin de yer aldığı bir ekip ile  
+                    İngiltere'nin Reading Üniversitesi'nden profesörlere projemizi sunduk ve aldığımız geri bildirimleri titizlikle değerlendirdik.  
+                </p>  
+                <p class="mb-4">  
+                    Güncel araştırmaları sürekli takip ederek işimizi geliştirmeye devam etmekteyiz. Önümüzdeki altı ay içinde, aylık 20 milyon un kurdu  
+                    yetiştirebilecek kapasiteye ulaşmayı hedefliyoruz. Bu hedefe ulaşarak, ülkemizde büyük bir öneme sahip olan hayvan yetiştiriciliği sektörüne,  
+                    sağlıklı ve verimliliği artıracak yemlerimizle katkıda bulunmayı amaçlıyoruz.  
+                </p>  
+            </article>  
+        </div>  
+        <footer id="footer">  
+            <p class="copyright">&copy; Meal Yemcilik</p>  
+        </footer>  
+    </div>  
+    <div id="bg"></div>  
+    <script src="assets/js/jquery.min.js"></script>  
+    <script src="assets/js/browser.min.js"></script>  
+    <script src="assets/js/breakpoints.min.js"></script>  
+    <script src="assets/js/util.js"></script>  
+    <script src="assets/js/main.js"></script>  
+</body>  
+</html>
